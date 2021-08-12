@@ -1,11 +1,11 @@
 import React from "react";
+import ScrollingEffect from "./ScrollingEffect";
 
 const AboutMe = (props) => {
   return (
-    <section className="about-me">
-      <h2>01.About Me</h2>
-      <p>jlksdjflkjadsdkfjakdjfklajldfkjlajkflks</p>
-    </section>
+    <ScrollingEffect wrapperElement="section">
+      <h3>01.About Me</h3>
+    </ScrollingEffect>
   );
 };
 

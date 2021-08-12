@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import NavigationBar from "./NavigationBar";
 import HeroMenu from "./HeroMenu";
-import Demo from "./Demo";
+import AboutMe from "./AboutMe";
+import LandingPage from "./LandingPage";
+import Projects from "./Projects";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -16,11 +18,15 @@ const App = () => {
     return <div>animation works</div>;
   } else {
     return (
-      <div>
+      <React.Fragment>
         <NavigationBar />
-        <Demo />
-        <HeroMenu />
-      </div>
+        <main>
+          <LandingPage />
+          <AboutMe />
+          <Projects />
+          <HeroMenu />
+        </main>
+      </React.Fragment>
     );
   }
 };
