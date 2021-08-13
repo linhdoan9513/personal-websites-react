@@ -23,8 +23,13 @@ const App = () => {
         <main>
           <LandingPage />
           <AboutMe />
-          <Projects />
-          <HeroMenu />
+          <section>
+            <h3>02.Projects</h3>
+            <Projects />
+            <Projects />
+            <Projects />
+            <HeroMenu />
+          </section>
         </main>
       </React.Fragment>
     );
