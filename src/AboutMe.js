@@ -1,11 +1,29 @@
 import React from "react";
-import ScrollingEffect from "./ScrollingEffect";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-const AboutMe = (props) => {
+const AboutMe = () => {
   return (
-    <ScrollingEffect wrapperElement="section">
-      <h3>01.About Me</h3>
-    </ScrollingEffect>
+    <article className="landing-page">
+      <Container fluid>
+        <Row>
+          <Col lg={{ span: 4 }}>
+            <div className="landing-page-content">
+              <div className="welcome">
+                <h1>Hi There 👋, I'm</h1>
+                <h2>
+                  linh<span>.</span>
+                </h2>
+              </div>
+
+              <button className="contact">Get In Touch</button>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </article>
   );
 };
 

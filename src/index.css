@@ -1,152 +1,59 @@
+
 body {
-    width: 90%; 
-    margin: 2% auto;
-    background-color: #2E2F33;
-    color: white;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    border: 2px solid turquoise;
+    max-width: 1600px;
+    border: 2px solid turquoise;
 }
 
-p { 
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    margin: 0;
+button {
+    font-family: 'Poppins', sans-serif;
 }
 
-.nav-link {
-    margin: 0 20px;
-    font-size: 18px;
-    color: white;
-}
-
-.container-fluid {
-    padding-left: 0;
-}
-
-.hero-menu-container {
-    width: 40px;
-    position: fixed;
-    left: 50px;
-    right: auto;
-    z-index: 10;
-    bottom: 0px;
-}   
-
-.hero-menu { 
-    list-style-type: none;
-    font-size: 28px;    
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: center;
-    -webkit-box-align: center;
-    margin-bottom: 0;
-}
-
-.nav-bar {
-    font-family: 'Gowun Batang', serif;
-}
-
-.hero-menu::after {
-    margin-top: 40px;
-    display: block;
-    content: "";
-    height: 90px;
-    width: 1px;
-    background-color: white;
-}
-
-h2 {
-    font-size: 80px;
+main {
+    width: 100%;
 }
 
 section {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    /* min-height: 100vh; */
-    padding: 100px;
-    border: 2px solid turquoise;
-    margin: 200px 0;
-}
-
-.about-me p {
-    max-width: 50%;
-    margin-bottom: 30px;
-}
-
-.project-content {
-    border: 2px solid purple;
+    align-items: center;
+    height: auto;
+    border: 2px solid darkviolet;
+    min-height: 100vh;
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    padding: auto 5%;
     object-fit: contain;
-}
-
-.container {
-    margin-top: 20px;
-    border: 2px solid red;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* .row {
-    border: 2px solid yellow;
-} */
-
-.col-sm {
-    border: 2px solid pink;
-    padding: 0; 
-}
-
-.col-sm-8 {
-    text-align: right;
-}
-
-.project-header,
-.project-title {
-    font-size: 25px;
-    text-align: right;
+    max-width: 100%; 
+    height: auto;
 }
 
 article {
-    margin: 30px 0px;
+    border: 2px solid blue;
+    width: 85%;  
 }
 
-@media screen and (max-width: 992px) {
-    .hero-menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 0 50%; 
-    }
+.round {
+    width: 200px;
+    height: 200px;
+    background: #FFDC61;
+    border-radius: 0 0 200px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -15;
+}
 
-    i {
-        margin: 0 30px;
-    }
-    
-    .hero-menu-container {
-        width: 100%;
-        position: relative;
-        left: 0px;
-        right: auto;
-        z-index: 10;
-    }
 
-    .about-me p {
-        max-width: 50%;
-    }
 
+
+@media screen and (max-width: 1024px) {
     section {
-        padding: 0 50px;
+        min-height: auto;
+        margin-bottom: 5%;
     }
-
-
-
 }
 

@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import NavigationBar from "./NavigationBar";
-import HeroMenu from "./HeroMenu";
 import AboutMe from "./AboutMe";
-import LandingPage from "./LandingPage";
-import Projects from "./Projects";
+import LandingPage from "../src/LandingPage/LandingPage";
+import NavBar from "../src/NavBar/NavBar";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -19,16 +18,14 @@ const App = () => {
   } else {
     return (
       <React.Fragment>
-        <NavigationBar />
+        <div className="round"></div>
         <main>
-          <LandingPage />
-          <AboutMe />
-          <section>
-            <h3>02.Projects</h3>
-            <Projects />
-            <Projects />
-            <Projects />
-            <HeroMenu />
+          <NavBar />
+          <section className="landing-page">
+            <LandingPage />
+          </section>
+          <section className="about-me">
+            <AboutMe />
           </section>
         </main>
       </React.Fragment>

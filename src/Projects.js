@@ -1,13 +1,13 @@
 import React from "react";
-import ScrollingEffect from "./ScrollingEffect";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const Projects = () => {
   return (
-    <ScrollingEffect wrapperElement="article">
+    <article>
       <Container fluid="true">
+        <h2>Projects.</h2>
         <Row>
           <Col lg={{ span: 8 }}>
             <div className="project-image">
@@ -17,7 +17,7 @@ const Projects = () => {
           <Col lg={{ span: 4 }}>
             <p className="project-header">Featured Project</p>
             <h4 className="project-title">
-              <a href="#">Cryptotracker</a>
+              {/* <a href="#">Cryptotracker</a> */}
             </h4>
             <div className="project-content">
               <div className="project-description">
@@ -31,14 +31,14 @@ const Projects = () => {
                 <li>Coin Gecko API</li>
               </ul>
               <div className="project-links">
-                <a href=""></a>
-                <a href=""></a>
+                {/* <a href=""></a>
+                <a href=""></a> */}
               </div>
             </div>
           </Col>
         </Row>
       </Container>
-    </ScrollingEffect>
+    </article>
   );
 };
 
