@@ -1,0 +1,144 @@
+/* .NavBarItems {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 128px;
+    align-items: center;
+    font-size: 1.2rem;
+    top: 0; 
+    width: 100%;
+    margin: 3% 0;
+
+}
+
+.NavBarItems p {
+    color: black; 
+    margin-top: 1%;
+    padding: 0 1rem;
+}
+
+
+.menu-icon {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.nav-menu {
+    display: flex; 
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: flex-end;
+    margin: 0; 
+}
+
+.nav-links {
+    text-decoration: none;
+    padding: 0 1rem;
+    color: black;
+    margin-top: 2%;
+} */
+
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.bi-cloud-moon-fill,
+.bi-cloud-sun-fill {
+    color: #FFDC61;
+    font-size: 2rem;
+}
+
+.navbar-light .navbar-brand {
+    color: #292929;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.navbar {
+    padding: 30px 100px 30px 100px;
+}
+
+.navbar-nav {
+    margin-left: 5%;
+}
+
+li.nav-item {
+    margin: 0 20px;
+
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: rgb(110, 110, 110);
+}
+
+.resume-link {
+    color: white;
+    text-decoration: none;
+}
+
+nav .navbar-nav li a:not(:last-child){
+    color: rgb(110, 110, 110);
+}
+
+nav .navbar-nav li a:hover::after{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 0;    
+    left:0;
+    bottom:0px; /*Change this to increase/decrease distance*/
+    border-bottom: 2px solid #000;  
+}
+
+.resume {
+    padding: 10px 20px; 
+    background-color: #FAB8C5;
+    border-radius: 15px;
+}
+
+.resume-link {
+    color: #413beb;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 992px) {
+
+    .navbar {
+        padding: 0 50px; 
+        box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 16%);
+        background-color: white;
+    }
+
+
+    .navbar-nav {
+        margin-left: 0; 
+        margin-bottom: 5%;
+    }
+
+    li.nav-item {
+        margin: 20px 0;
+    }
+
+    .resume {
+        padding: 10px 20px; 
+        background-color: #FAB8C5;
+        border-radius: 5px;
+    }
+
+    .navbar-light .navbar-brand {
+        color: #292929;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding-top: 10px;
+    }
+
+    
+  
+}
